@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<!-- css files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+	<link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+	<meta name="author" content="Hassan Ali">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="nav container void-background">
+			<!-- This "nav-menu" is hidden on mobile -->
+			<!-- Add the modifier "is-active" to display it on mobile -->
+
+			<div class="nav-right nav-menu">
+				<a class="nav-item" href="#about">About</a>
+				<a class="nav-item" href="#projects">Projects</a>
+				<a class="nav-item" href="#resume">Resume</a>
+				<a class="nav-item" href="#social">Social</a>
+			</div>
+
+			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+			<span class="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+		</nav>
+				
+		<!-- About Me -->
+		<section id="about" class="section section-1">
+			<div class="container has-text-centered">
+				<!-- Source: https://flic.kr/p/pAZBNK -->
+				<img class="avatar" src="assets/img/profile.jpg">
+			</div>
+			<div class="container"></br>
+				<p class="intro">
+					Hello! My name is Michael. I am a junior web developer/programmer based in Fredericton, New Brunswick. I have a Bachelors Degree in Computer Science from the University of New Brunswick.
+				</p>
+			</div>
+		</section>
+		
+		<!-- Projects -->
+		<section  id="projects" class="section section-2">
+			<div class="container">
+				<div class="has-text-centered">
+					<h3 class="title is-3">Projects</h3>
+				</div>
+				
+				<div class="columns is-multiline is-desktop">
+					<!-- Project 1 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/space.png" alt="Image">
+									</figure>
+								</div>
+								<div>		
+									<h2>Space Invaders</h2>	
+									<br>
+									<p>
+										Used the python pygame library to create a clone of the game Space Invaders.
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<!-- Project 2 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/NHL.png" alt="Image">
+									</figure>
+								</div>
+								<div>
+									<h2>NHL Stats</h2>		
+									<br>
+									<p>
+										Used the jQuery AJAX method to call the NHL API. Used JSON to parse returned data and JavaScript to put it into a readable format. Created a website using HTML/CSS and bootstrap to display content. Hosted on Microsoft Azure at https://brave-flower-001b1dd10.1.azurestaticapps.net/
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<!--- Project 3 --->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/wordle.png" alt="Image">
+									</figure>
+								</div>
+								<div>
+									<h2>Wordle Clone</h2>	
+									<br>		
+									<p>
+										Used Java to develop a clone of the popular game Wordle. Created a GUI using JavaFX.
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--- Resume --->
+		<section id="resume" class="section section-5">
+			<div class="container">
+				<div class="has-text-centered">					
+					<h3 class="title is-3">Resume</h3>
+				</div>
+					<h1><b>Education</b></h1><br>
+					<p>Bachelor of Computer Science, Univeristy of New Brunswick. April 2021</p><br>
+					<p>Relevant Coursework: Introduction to Computer Programming in Java I and II; Algorithm Design and Analysis I and II; Introduction to Databases; Network Security; Calculus I, II and III.</p><br>
+					<h1><b>Work Experience</b></h1><br>
+					<p>Office Assistant, Eastern Designers. June 2019 - September 2019</p><br>
+					<ul>
+						<li>Worked on a modernization project to scan old paper engineering drawings into electronic versions on a computer.</li>
+						<li>Organised scanned drawings once completed and uploaded completed drawings onto a web server for future use.</li>
+					</ul><br>
+					<p>Junior Software Tester, IONA. June 2016 - September 2016</p><br>
+					<ul>
+						<li>Worked with a small team to execute manual test cases on a large software system.</li>
+						<li>Actively participated in daily scrum meetings and addressed issues that were found in the software.</li>
+						<li>Used Jira to log and track the progress of bugs.</li>
+					</ul><br>
+					<p><b>Skills</b></p><br>
+					<p>Soft Skills: Strong memory; creativeness; problem-solving skills; strong desire to learn; organisational skills; analytical skills; fast learner; communication skills.</p><br>
+					<p>Coding Skills: Java; C++; C#; Python; SQL; CSS/HTML; JavaScript</p><br>
+					<p>Tools: Git, Linux, Eclipse, Jira</p><br>
+				</div>
+			</div>
+		</section>	
+
+		<!-- Social -->
+		<section id="social" class="section section-3">
+			<div class="container">
+				<div class="has-text-centered">					
+					<h3 class="title is-3">Connect with Me</h3>
+				</div>
+				<p>mikespencer76@gmail.com</p><br>
+				<p>+1(506)478-0618</p><br>
+				<div class="social-container columns">
+					<div class="column is-6 has-text-centered">
+						<a target="_blank" href="https://www.linkedin.com/in/michael-spencer-569387205/"><img class="" src="assets/img/linkedin.png"></a>
+					</div>
+					<div class="column is-6 has-text-centered">
+						<a target="_blank" href="https://github.com/michael-spencer31/"><img class="" src="assets/img/github.png"></a>
+					</div>
+				</div>
+			</div>
+		</section>	
+		
+		<!-- Footer -->
+		<section class="section-4 has-text-centered container">
+			<a href="http://www.hassanali.me/about">Michael Spencer</a>
+		</section>
+		
+		<!-- Scripts  -->
+		<script src="controller.js"></script>		
+	</body>	
+</html>
