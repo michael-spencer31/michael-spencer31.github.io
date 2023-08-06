@@ -4,12 +4,11 @@
 
 	<head>
 
-		<title>NHL Stats</title>
+		<title>Schedule</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="main.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>  
 		<link rel="icon" href="https://icons.iconarchive.com/icons/martz90/circle/512/nhl-icon.png">
 	</head>
 	
@@ -37,6 +36,9 @@
 						<a class="nav-link" href="players.html">Player Data</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" href="playoffs.html">Playoffs</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="schedule.html">Schedule</a>
 					</li>
 					<li class="nav-item">
@@ -49,39 +51,7 @@
 			</div>
 		</nav>
 
-		<header class="page-header header container-fluid">
-			<div class="overlay"></div>
-			<div class="description">
-				<h1>Welcome to NHL Sports Network</h1>
-				<p>The 2023 - 2024 NHL Season will start in: </p>
-				<label id="timer" style="color:white"></label>
-			</div>
-		</header>
-		<script>
-
-		    var countDownDate = new Date("Oct 11, 2023, 15:37:25").getTime();
-
-		    var x = setInterval(function(){
-
-		        var now = new Date().getTime();
-		        var distance = countDownDate - now;
-
-		        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-		        document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-		        if(distance < 0){
-			        clearInterval(x);
-			        document.getElementById("timer").innerHTML = "HOCKEY TIME!";
-			    }
-		    }, 1000);
-
-			    
-		</script>
-		
+		<label id="testlabel"></label>
 		<script src="jquery-3.5.1.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		<script src="main.js"></script>
